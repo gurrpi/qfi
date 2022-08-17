@@ -28,12 +28,12 @@
   },
   "scripts": {
     "build": "yarn workspaces run build",
-    "build:contracts": "yarn workspace @qfi/contracts run build",
-    "build:subgraph": "yarn workspace @qfi/subgraph run build",
+    "build:contracts": "yarn workspace @quadratic-funding/contracts run build",
+    "build:subgraph": "yarn workspace @quadratic-funding/subgraph run build",
     "build:hooks": "yarn workspace @qfi/hooks run build",
     "test": "yarn workspaces run test",
-    "test:contracts": "yarn workspace @qfi/contracts run test",
-    "deploy:subgraph":"yarn workspace @qfi/subgraph run deploy",
+    "test:contracts": "yarn workspace @quadratic-funding/contracts run test",
+    "deploy:subgraph":"yarn workspace @quadratic-funding/subgraph run deploy",
     "prepare": "husky install"
   },
   "keywords": [
