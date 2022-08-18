@@ -1,0 +1,16 @@
+name: Nightly
+
+on:
+  push:
+  schedule:
+    - cron: 0 0 * * *
+
+jobs:
+  build-contracts:
+    uses: ./.github/workflows/contracts-build.yml
+
+  build-frontend:
+    uses: ./.github/workflows/frontend-build.yml
+
+  build-subgraph:
+    uses: ./.github/workflows/subgraph-build.yml
